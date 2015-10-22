@@ -14,3 +14,7 @@ Project should have a R script called ```run_analysis.R``` that does the followi
 
 * Clone the repository and navigate to that directory using ```setwd()```
 * Run the code using ```source('run_analysis.R')``` which will generate the tidy data set in the same directory with name ```tidy_data.txt```
+
+## CodeBook
+
+Codebook is available [here](https://github.com/bhargavgolla/GettingAndCleaningData/blob/master/CodeBook.md)
