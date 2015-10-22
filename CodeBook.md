@@ -60,9 +60,12 @@ There are 5 parts:
 
 ## Implementation details
 
-* ```data.table``` and ```reshape2``` provide very good access to large data files and easy transformation
+* ```data.table``` provides very good access to large data files and easy transformation
 * Load both test and train data into data tables.
 * Load the features and activity labels.
 * Subset just the mean and standard deviation column names and data.
 * Process the data. There are two parts processing test and train data respectively.
-* Merge data set.
+* Add activity labels to y_test/train. Bind all subject_labels, X_test/Train and Y_test/train to make two test and train datasets
+* Row bind test and train data set.
+* Melt all data variables based on the variables.
+* Apply mean on all variables with Subject_ID + Activity_Label as key, using cast.
